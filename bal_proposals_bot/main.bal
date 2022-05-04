@@ -60,5 +60,5 @@ public function main() returns error? {
     }
     string fileContent = "<h1>Ballerina Proposals</<h1><h3>Open Proposals</h3>" + repoData;
     io:println(fileContent);
-    check io:fileWriteString("./sample.html", fileContent);
+    check io:fileWriteString("./docs/index.html", fileContent);
 }
