@@ -9,7 +9,7 @@ on:
         default: "warning"
 
 jobs:
-  test:
+  generateHTML:
     env:
       JBAL_VERSION: "2201.0.3"
       GITHUB_TOKEN: ${{secrets.PROPOSAL_BOT_SECRET}}
@@ -26,7 +26,7 @@ jobs:
           sudo dpkg -i $HOME/ballerina-$JBAL_VERSION-swan-lake-linux-x64.deb
           echo "/usr/lib/ballerina/bin" >> $GITHUB_PATH
           echo "/usr/lib/ballerina/dependencies/jdk-11.0.8+10-jre/bin/java" >> $GITHUB_PATH
-      - name: Run Tests
+      - name: Run Proposals Bot
         run: |
           bal run bal_proposals_bot
       - name: Commit files
