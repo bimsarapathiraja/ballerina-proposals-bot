@@ -1,4 +1,4 @@
-name: Test Samples
+name: Generate Proposal HTML
 
 on:
   workflow_dispatch:
@@ -38,7 +38,7 @@ jobs:
           if [-z "$(git status --porcelain)"]; then
              echo "::set-output name=push::false"
           else
-             git commit -m "Add changes" -a
+             git commit -m "Generate proposal HTML" -a
              echo "::set-output name=push::true"
           fi
         shell: bash
