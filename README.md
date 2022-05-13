@@ -1,6 +1,6 @@
 # ballerina-proposals-bot
 
-ballerina proposals bot from Anupama.
+ballerina proposals bot by Anupama.
 
 Creates a HTML file
 
