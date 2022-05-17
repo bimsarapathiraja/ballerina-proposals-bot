@@ -1,6 +1,7 @@
 # Ballerina Proposals 
 ### Open Proposals 
 #### ballerina-lang
+
  |Proposal|Author|Comments|Created Date| 
  |---|----|----|----| 
 |[Utility to enforce semvar to Ballerina APIs](https://github.com/ballerina-platform/ballerina-lang/issues/32368)|[hevayo](https://github.com/hevayo)|0|2021-08-26|
@@ -8,7 +9,9 @@
 |[Suggestion: Ability to attach @resources to a service](https://github.com/ballerina-platform/ballerina-lang/issues/19523)|[ramith](https://github.com/ramith)|0|2019-10-22|
 |[[Proposal] Add support for MacPorts package manager](https://github.com/ballerina-platform/ballerina-lang/issues/9675)|[conradwt](https://github.com/conradwt)|9|2018-07-18|
 |[Rename Constants classes](https://github.com/ballerina-platform/ballerina-lang/issues/4558)|[riyafa](https://github.com/riyafa)|4|2018-02-06|
+
 #### ballerina-standard-library
+
  |Proposal|Author|Comments|Created Date| 
  |---|----|----|----| 
 |[Proposal: Ballerina Constraint Package](https://github.com/ballerina-platform/ballerina-standard-library/issues/2850)|[ldclakmal](https://github.com/ldclakmal)|15|2022-04-20|
@@ -25,7 +28,9 @@
 |[Proposal: `continue` action for HTTP Client API](https://github.com/ballerina-platform/ballerina-standard-library/issues/2038)|[ayeshLK](https://github.com/ayeshLK)|4|2021-10-12|
 |[Proposal: xDS API Support for gRPC](https://github.com/ballerina-platform/ballerina-standard-library/issues/2011)|[BuddhiWathsala](https://github.com/BuddhiWathsala)|2|2021-10-06|
 |[User has to provide offset to get time local time](https://github.com/ballerina-platform/ballerina-standard-library/issues/1138)|[KRVPerera](https://github.com/KRVPerera)|1|2021-03-23|
+
 #### module-ballerina-c2c
+
  |Proposal|Author|Comments|Created Date| 
  |---|----|----|----| 
 |[[Proposal] Mesos Deploy Support](https://github.com/ballerina-platform/module-ballerina-c2c/issues/431)|[BERA](https://github.com/BERA)|1|2018-07-21|
