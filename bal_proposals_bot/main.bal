@@ -22,19 +22,19 @@ type User record {
 
 string[] repoList = [
     "ballerina-lang",
-    "ballerina-standard-library",
-    "plugin-vscode-compiler-toolkit",
-    "nballerina",
-    "ballerina-dev-tools",
-    "ballerina-performance-cloud",
-    "module-ballerina-docker",
-    "module-ballerina-c2c",
-    "module-ballerinax-aws.lambda",
-    "module-ballerinax-azure.functions",
-    "openapi-tools",
-    "ballerina-update-tool",
-    "ballerina-distribution",
-    "ballerina-spec"
+    "ballerina-standard-library"
+    // "plugin-vscode-compiler-toolkit",
+    // "nballerina",
+    // "ballerina-dev-tools",
+    // "ballerina-performance-cloud",
+    // "module-ballerina-docker",
+    // "module-ballerina-c2c",
+    // "module-ballerinax-aws.lambda",
+    // "module-ballerinax-azure.functions",
+    // "openapi-tools",
+    // "ballerina-update-tool",
+    // "ballerina-distribution",
+    // "ballerina-spec"
 ];
 
 public function main() returns error? {
@@ -72,5 +72,5 @@ public function main() returns error? {
     }
     string fileContent = "<h1>Ballerina Proposals</<h1><h3>Open Proposals</h3>" + repoData;
     io:println(fileContent);
-    check io:fileWriteString("./docs/index.html", fileContent);
+    check io:fileWriteString("./docs/index2.md", fileContent);
 }
