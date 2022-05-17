@@ -22,19 +22,19 @@ type User record {
 
 string[] repoList = [
     "ballerina-lang",
-    "ballerina-standard-library"
-    // "plugin-vscode-compiler-toolkit",
-    // "nballerina",
-    // "ballerina-dev-tools",
-    // "ballerina-performance-cloud",
-    // "module-ballerina-docker",
-    // "module-ballerina-c2c",
-    // "module-ballerinax-aws.lambda",
-    // "module-ballerinax-azure.functions",
-    // "openapi-tools",
-    // "ballerina-update-tool",
-    // "ballerina-distribution",
-    // "ballerina-spec"
+    "ballerina-standard-library",
+    "plugin-vscode-compiler-toolkit",
+    "nballerina",
+    "ballerina-dev-tools",
+    "ballerina-performance-cloud",
+    "module-ballerina-docker",
+    "module-ballerina-c2c",
+    "module-ballerinax-aws.lambda",
+    "module-ballerinax-azure.functions",
+    "openapi-tools",
+    "ballerina-update-tool",
+    "ballerina-distribution",
+    "ballerina-spec"
 ];
 
 public function main() returns error? {
@@ -52,25 +52,24 @@ public function main() returns error? {
         if (issueCount > 0) {
             string issuelist = "";
             foreach var issue in data.items {
-                issuelist = issuelist + "<tr>";
-                issuelist = issuelist + string `<td><a href="${issue.html_url}"target="_blank">${issue.title}</a></td>`;
-                issuelist = issuelist + string `<td><a href="${issue.user.html_url}"target="_blank">${issue.user.login}</a></td>`;
-                issuelist = issuelist + string `<td>${issue.comments}</td>`;
-                issuelist = issuelist + string `<td>${issue.created_at.substring(0, 10)}</td>`;
-                issuelist = issuelist + "</tr>";
+                issuelist = issuelist + "|";
+                issuelist = issuelist + "[" + string `${issue.title}` + "](" + string `${issue.html_url}` + ")|";
+                issuelist = issuelist + "[" + string `${issue.user.login}` + "](" + string `${issue.user.html_url}` + ")|";
+                issuelist = issuelist + string `${issue.comments}` + "|";
+                issuelist = issuelist + string `${issue.created_at.substring(0, 10)}` + "|";
+                // issuelist = issuelist + "|";
+                // issuelist = issuelist + "a|";
+                // issuelist = issuelist + "b|";
+                // issuelist = issuelist + "c|";
+                // issuelist = issuelist + "d|";
+                issuelist = issuelist + "\n";
             }
-            repoData = repoData + string `<h4><code>${repository}</code></h4>
-                                          <table border='2' style='border-collapse:collapse;text-align:left;width:50%;padding:10px;'>
-                                            <tr>
-                                                <th>Proposal</th><th>Author</th><th>Comments</th><th>Created Date</th>
-                                            </tr>
-                                            ${issuelist}
-                                          </table>`;
+            repoData = repoData + string `#### ${repository}` + "\n\n|Proposal|Author|Comments|Created Date| \n|---|----|----|----| \n" + string `${issuelist}` + "\n";
         }
 
         io:println("Repo Count:", repoCount);
     }
-    string fileContent = "<h1>Ballerina Proposals</<h1><h3>Open Proposals</h3>" + repoData;
+    string fileContent = "# Ballerina Proposals \n### Open Proposals \n" + repoData;
     io:println(fileContent);
-    check io:fileWriteString("./docs/index2.md", fileContent);
+    check io:fileWriteString("./docs/index.md", fileContent);
 }
