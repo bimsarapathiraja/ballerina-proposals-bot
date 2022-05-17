@@ -2,8 +2,8 @@
 ### Open Proposals 
 #### ballerina-lang
 
- |Proposal|Author|Comments|Created Date| 
- |---|----|----|----| 
+|Proposal|Author|Comments|Created Date| 
+|---|----|----|----| 
 |[Utility to enforce semvar to Ballerina APIs](https://github.com/ballerina-platform/ballerina-lang/issues/32368)|[hevayo](https://github.com/hevayo)|0|2021-08-26|
 |[Implement new service typing proposal](https://github.com/ballerina-platform/ballerina-lang/issues/26064)|[rdhananjaya](https://github.com/rdhananjaya)|0|2020-09-24|
 |[Suggestion: Ability to attach @resources to a service](https://github.com/ballerina-platform/ballerina-lang/issues/19523)|[ramith](https://github.com/ramith)|0|2019-10-22|
@@ -12,12 +12,11 @@
 
 #### ballerina-standard-library
 
- |Proposal|Author|Comments|Created Date| 
- |---|----|----|----| 
+|Proposal|Author|Comments|Created Date| 
+|---|----|----|----| 
 |[Proposal: Ballerina Constraint Package](https://github.com/ballerina-platform/ballerina-standard-library/issues/2850)|[ldclakmal](https://github.com/ldclakmal)|15|2022-04-20|
 |[Proposal: Introduce API to convert the Ballerina record to XML](https://github.com/ballerina-platform/ballerina-standard-library/issues/2819)|[kalaiyarasiganeshalingam](https://github.com/kalaiyarasiganeshalingam)|10|2022-03-28|
 |[Proposal: Add data binding support for RabbitMQ module](https://github.com/ballerina-platform/ballerina-standard-library/issues/2818)|[aashikam](https://github.com/aashikam)|2|2022-03-28|
-|[Proposal: Add data binding support for NATS module](https://github.com/ballerina-platform/ballerina-standard-library/issues/2817)|[aashikam](https://github.com/aashikam)|2|2022-03-28|
 |[Proposal: gRPC CLI Improvements](https://github.com/ballerina-platform/ballerina-standard-library/issues/2794)|[BuddhiWathsala](https://github.com/BuddhiWathsala)|5|2022-03-20|
 |[Proposal: Data-binding for `application/x-www-form-urlencoded`](https://github.com/ballerina-platform/ballerina-standard-library/issues/2530)|[shafreenAnfar](https://github.com/shafreenAnfar)|5|2021-12-21|
 |[Proposal: VSCode command to download OpenAPI specification](https://github.com/ballerina-platform/ballerina-standard-library/issues/2509)|[shafreenAnfar](https://github.com/shafreenAnfar)|0|2021-12-20|
@@ -31,7 +30,7 @@
 
 #### module-ballerina-c2c
 
- |Proposal|Author|Comments|Created Date| 
- |---|----|----|----| 
+|Proposal|Author|Comments|Created Date| 
+|---|----|----|----| 
 |[[Proposal] Mesos Deploy Support](https://github.com/ballerina-platform/module-ballerina-c2c/issues/431)|[BERA](https://github.com/BERA)|1|2018-07-21|
 
