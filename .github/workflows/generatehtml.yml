@@ -32,8 +32,8 @@ jobs:
       - name: Commit files
         id: commit
         run: |
-          git config --local user.email "anupama@wso2.com"
-          git config --local user.name "anupama-pathirage"
+          git config --local user.email "bgpbimsara@gmail.com"
+          git config --local user.name "bimsarapathiraja"
           git add --all
           if [-z "$(git status --porcelain)"]; then
              echo "::set-output name=push::false"
@@ -44,8 +44,8 @@ jobs:
         shell: bash
       - name: Push changes
         run: |
-          git config --global user.email "anupama@wso2.com"
-          git config --global user.name "anupama-pathirage"
+          git config --global user.email "bgpbimsara@gmail.com"
+          git config --global user.name "bimsarapathiraja"
           git push origin master
         env:
           GITHUB_TOKEN: ${{ secrets.PROPOSAL_BOT_SECRET }}
