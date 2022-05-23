@@ -22,6 +22,7 @@ jobs:
           token: ${{ secrets.PROPOSAL_BOT_SECRET }}
       - name: Download jBallerina deb
         run: |
+          echo "djaebfaefakf"
           curl -L "https://github.com/ballerina-platform/ballerina-distribution/releases/download/v$JBAL_VERSION/ballerina-$JBAL_VERSION-swan-lake-linux-x64.deb" > $HOME/ballerina-$JBAL_VERSION-swan-lake-linux-x64.deb
       - name: Install jBallerina deb
         run: |
