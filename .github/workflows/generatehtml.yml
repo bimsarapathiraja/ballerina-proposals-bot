@@ -1,25 +1,25 @@
 name: Generate Proposal HTML
 
-# on:
-#   workflow_dispatch:
-#     inputs:
-#       logLevel:
-#         description: "Log lev"
-#         required: true
-#         default: "warning"
+on:
+  workflow_dispatch: //periodic method
+    inputs:
+      logLevel:
+        description: "Log lev"
+        required: true
+        default: "warning"
 
-on: push
+# on: push
 
 jobs:
   generateHTML:
     env:
       JBAL_VERSION: "2201.0.3"
-      GITHUB_TOKEN: ${{secrets.PROPOSAL_BOT_SECRET}}
+      GITHUB_TOKEN: ${{secrets.BALLERINA_BOT_TOKEN}}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PROPOSAL_BOT_SECRET }}
+          token: ${{ secrets.BALLERINA_BOT_TOKEN }}
       - name: Download jBallerina deb
         run: |
           echo "djaebfaefakf"
@@ -51,4 +51,4 @@ jobs:
           git config --global user.name "bimsarapathiraja"
           git push origin master
         env:
-          GITHUB_TOKEN: ${{ secrets.PROPOSAL_BOT_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.BALLERINA_BOT_TOKEN }}
