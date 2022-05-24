@@ -17,7 +17,7 @@ jobs:
       GITHUB_TOKEN: ${{secrets.PROPOSAL_BOT_SECRET}}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@markdown
         with:
           token: ${{ secrets.PROPOSAL_BOT_SECRET }}
       - name: Download jBallerina deb
